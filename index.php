@@ -16,36 +16,41 @@ Olimpia Milano - Cantù | 55 - 60
 <?php
 
     $matches =[
+
         "match_1" =>[
             "Home_team" => "VL Pesaro",
             "Away_team" => "Fortitudo Bologna",
             "Home_score" => 70,
             "Away_score" => 78
         ],
+
         "match_2" =>[
             "Home_team" => "Dinamo Sassari",
             "Away_team" => "Universo Treviso",
             "Home_score" => 97,
             "Away_score" => 93
         ],
+
         "match_3" =>[
             "Home_team" => "Brescia",
             "Away_team" => "Venezia",
             "Home_score" => 71,
             "Away_score" => 69
         ],
+
         "match_4" =>[
             "Home_team" => "Olmpia Milano",
             "Away_team" => "Brindisi",
             "Home_score" => 82,
             "Away_score" => 88
         ],
+
         "match_5" =>[
             "Home_team" => "Trieste",
             "Away_team" => "Virtus Bologna",
             "Home_score" => 60,
             "Away_score" => 77
-        ],
+        ]
     ];
 
     public function printMatch($array){
@@ -54,10 +59,11 @@ Olimpia Milano - Cantù | 55 - 60
         $infos = "";
 
         while ($i < count($array)) {
-            $infos = $array[i]."Home_team" . " - " . $array[i]."Away_team" . " | " . $array[i]."Home_score" . " - " .$array[i]."Away_score"
+            $infos = $array[i]."Home_team" . " - " . $array[i]."Away_team" . " | " . $array[i]."Home_score" . " - " .$array[i]."Away_score";
             $matches_infos[] = $infos;
             $i++;
         }
+
         return $matches_infos;
     };
 
