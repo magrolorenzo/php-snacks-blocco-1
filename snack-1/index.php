@@ -58,10 +58,9 @@ Olimpia Milano - Cantù | 55 - 60
         $matches_infos = [];
         $infos = "";
 
-        while ($i < count($array)) {
+        for( $i = 0 ; $i < count($array); $i++ ){
             $infos = $array[$i]["home_team"] . " - " . $array[$i]["away_team"] . " | " . $array[$i]["home_score"] . " - " .$array[$i]["away_score"];
-            $matches_infos[] = $infos;
-            $i++;
+            $matches_infos[] = $infos;            
         }
 
         return $matches_infos;
@@ -86,13 +85,12 @@ Olimpia Milano - Cantù | 55 - 60
             </h2>
             <ul>
                 <?php
-                    $i = 0;
-                    while ( $i <= count($matches) ) {
+                    $results = printMatch($matches);
+                    for( $i = 0 ; $i < count($results); $i++ ){
                 ?>
                 <li>
                     <?php
-                        echo printMatch($matches)[$i];
-                        $i++;
+                        echo $results[$i];
                     }
                     ?>
                 </li>
