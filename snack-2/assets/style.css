@@ -10,13 +10,8 @@ body{
     color: lightgrey;
 }
 
-.scores{
+.access{
     padding: 40px;
-    font-size: 26px;
-    list-style: none;
-}
-
-.scores ul{
     font-size: 26px;
     list-style: none;
 }

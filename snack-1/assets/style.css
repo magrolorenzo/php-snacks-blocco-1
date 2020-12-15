@@ -11,9 +11,7 @@ body{
 }
 
 .scores{
-    padding: 40px;
-    font-size: 26px;
-    list-style: none;
+    padding: 40px;    
 }
 
 .scores ul{
